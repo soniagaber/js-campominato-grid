@@ -7,9 +7,9 @@ playButtonEl.addEventListener("click", function(){
         casella.classList.add("quadrata");
         casella.innerText= i;
         containerEl.append(casella);
-
+        casella.addEventListener("click", function(){
+            casella.classList.add("azzurra");
+            console.log(casella.innerHTML);
+        })
     }
-    
-
-
 })
